@@ -1,0 +1,23 @@
+# Dependencies
+node_modules/
+
+# Next.js
+.next/
+out/
+
+# Environment files
+.env
+.env.local
+.env.production
+.env*.local
+!.env.example
+
+# Deployment metadata
+.vercel/
+
+# Local generated files
+tsconfig.tsbuildinfo
+work/.pnpm-store/
+
+# macOS
+.DS_Store
