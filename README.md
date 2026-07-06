@@ -173,9 +173,31 @@ Runs ESLint with the Next.js core web vitals and TypeScript rules.
 
 ## Deployment
 
+### GitHub Pages
+
+The repository includes `.github/workflows/deploy.yml` for GitHub Pages.
+
+The workflow runs automatically on pull requests, pushes to `main`, and manual dispatch:
+
+- Pull requests: install dependencies, run lint, run typecheck, and build a static export.
+- Pushes to `main`: run the same validation checks, upload the `out/` folder, and deploy to GitHub Pages.
+- Manual runs: allow a maintainer to redeploy from the GitHub Actions tab.
+
+Before the first deployment:
+
+1. Push this repository to GitHub.
+2. Open the repository settings in GitHub.
+3. Go to Pages.
+4. Set Build and deployment Source to GitHub Actions.
+5. Push to `main` or run the workflow manually.
+
+No GitHub repository secrets are required for GitHub Pages.
+
+During GitHub Pages builds, `next.config.ts` enables static export and unoptimized images. The workflow sets the correct base path automatically for project pages such as `https://username.github.io/repository-name/`. User or organization pages repositories such as `username.github.io` are served without a base path. If GitHub Pages later uses a custom domain, set `NEXT_PUBLIC_BASE_PATH` to an empty value in the workflow's "Configure GitHub Pages build" step.
+
 ### Vercel
 
-Vercel is the simplest deployment target for this project.
+Vercel remains a simple optional deployment target for this project.
 
 1. Push the repository to GitHub, GitLab, or Bitbucket.
 2. Import the project in Vercel.
@@ -199,9 +221,9 @@ Use Hostinger Node.js hosting when server-side Next.js hosting is available.
 
 ### Static Export
 
-Static export is not enabled in the current configuration.
+Static export is enabled only for GitHub Pages builds.
 
-The site is mostly static, but Next Image optimization and the default Next server output are currently used. If static hosting is required, update `next.config.ts` with `output: "export"` and confirm image handling is compatible with the target host.
+The workflow sets `GITHUB_PAGES=true`, which makes `next.config.ts` output static files to `out/`. Local production builds still use the default Next.js server output unless that environment variable is set.
 
 ## Adding a New Page
 

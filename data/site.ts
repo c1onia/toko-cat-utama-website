@@ -1,3 +1,5 @@
+import { withBasePath } from "@/lib/utils";
+
 export const company = {
   name: "Toko Cat Utama",
   tagline: "Mewarnai Indonesia Sejak 1955",
@@ -5,10 +7,10 @@ export const company = {
 };
 
 export const brandAssets = {
-  logo: "/brand/logo-primary.jpg",
-  mascot: "/brand/mascot.png",
-  heroHouse: "/brand/hero-house.png",
-  colorBars: "/brand/color-bars.png",
+  logo: withBasePath("/brand/logo-primary.jpg"),
+  mascot: withBasePath("/brand/mascot.png"),
+  heroHouse: withBasePath("/brand/hero-house.png"),
+  colorBars: withBasePath("/brand/color-bars.png"),
 };
 
 export const brandColors = {
