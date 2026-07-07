@@ -8,9 +8,16 @@ export const company = {
 
 export const brandAssets = {
   logo: withBasePath("/brand/logo-primary.jpg"),
+  logoPrimary: withBasePath("/brand/logo-primary.jpg"),
+  logoBlack: withBasePath("/brand/logo-black.jpg"),
+  logoWhite: withBasePath("/brand/logo-white.jpg"),
+  logoSecondaryYellow: withBasePath("/brand/logo-secondary-yellow.jpg"),
+  logoSecondaryRed: withBasePath("/brand/logo-secondary-red.jpg"),
+  logoSecondaryBlue: withBasePath("/brand/logo-secondary-blue.jpg"),
   mascot: withBasePath("/brand/mascot.png"),
-  heroHouse: withBasePath("/brand/hero-house.png"),
+  heroHouse: withBasePath("/brand/hero-house-v2.jpg"),
   colorBars: withBasePath("/brand/color-bars.png"),
+  loyaltyMember: withBasePath("/brand/utama-loyalty-member.jpg"),
 };
 
 export const brandColors = {

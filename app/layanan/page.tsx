@@ -17,7 +17,7 @@ const serviceIcons = [Paintbrush, Palette, ClipboardCheck, Truck];
 
 export default function LayananPage() {
   return (
-    <main className="min-h-screen bg-white">
+    <main id="main-content" className="min-h-screen bg-white">
       <Navbar />
       <PageHero
         eyebrow="Layanan"

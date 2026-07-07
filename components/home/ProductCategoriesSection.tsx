@@ -11,7 +11,7 @@ export function ProductCategoriesSection() {
             eyebrow="Product Categories"
             title="Kategori produk untuk semua permukaan dan skala pekerjaan."
             description="Dari dinding rumah sampai lantai industri, setiap kategori disusun untuk membantu Anda menemukan solusi cat yang tepat."
-            className="text-white [&_h2]:text-white [&_p]:text-white/70"
+            className="text-white [&>p:first-child]:text-utama-yellow [&_h2]:text-white [&_p]:text-white/70"
           />
           <div className="grid grid-cols-3 overflow-hidden rounded-lg">
             <span className="h-16 bg-utama-yellow" />

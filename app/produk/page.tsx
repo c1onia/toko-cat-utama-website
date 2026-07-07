@@ -15,7 +15,7 @@ export const metadata: Metadata = {
 
 export default function ProdukPage() {
   return (
-    <main className="min-h-screen bg-white">
+    <main id="main-content" className="min-h-screen bg-white">
       <Navbar />
       <PageHero
         eyebrow="Produk"

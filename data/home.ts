@@ -1,4 +1,4 @@
-import type { CustomerJourney, SectionCopy, TextCard } from "@/types";
+import type { CustomerJourney, LoyaltyProgram, LoyaltyReward, PromoContent, SectionCopy, TextCard } from "@/types";
 
 export const homeHero = {
   eyebrow: "Mewarnai Indonesia Sejak 1955",
@@ -66,21 +66,73 @@ export const whyChooseUsHeader: SectionCopy = {
 
 export const whyChooseUs: TextCard[] = [
   {
-    title: "Pengalaman Sejak 1955",
-    description: "Warisan layanan panjang membuat setiap rekomendasi lebih matang dan praktis.",
+    title: "Sejak 1955",
+    description: "Pengalaman panjang membuat setiap rekomendasi produk, warna, dan aplikasi lebih matang.",
   },
   {
-    title: "Pilihan Produk Lengkap",
-    description: "Cat dekoratif, komersial, industri, perlengkapan aplikasi, dan aksesoris tersedia.",
+    title: "Gratis Ongkir hingga 20 KM*",
+    description: "Pengiriman dapat dibantu dari cabang terdekat sesuai syarat dan ketentuan yang berlaku.",
   },
   {
-    title: "Konsultasi Warna",
+    title: "Utama Loyalty Member",
+    description: "Pelanggan dapat mengumpulkan poin transaksi dan menukarkannya dengan hadiah program resmi.",
+  },
+  {
+    title: "Jaringan Cabang yang Luas",
+    description: "Cabang resmi Toko Cat Utama membantu pelanggan menemukan produk lebih dekat dan cepat.",
+  },
+  {
+    title: "Konsultasi Warna Profesional",
     description: "Tim membantu menyesuaikan palet dengan gaya bangunan, cahaya, dan kebutuhan ruang.",
   },
   {
-    title: "Dukungan Proyek",
-    description: "Pengadaan, rekomendasi sistem, dan koordinasi suplai dibuat lebih terstruktur.",
+    title: "Solusi Rumah, Komersial & Industri",
+    description: "Pilihan produk dan layanan disiapkan untuk hunian, bisnis, proyek, dan area kerja berat.",
   },
+];
+
+export const freeDeliveryPromo: PromoContent = {
+  eyebrow: "Gratis Ongkir",
+  title: "Gratis Pengiriman hingga Radius 20 KM*",
+  description:
+    "Nikmati layanan pengiriman GRATIS untuk pembelian sesuai syarat dan ketentuan dari cabang terdekat.",
+  disclaimer: "*Syarat & ketentuan berlaku.",
+};
+
+export const loyaltyProgram: LoyaltyProgram = {
+  eyebrow: "Utama Loyalty Member",
+  title: "Belanja cat jadi poin untuk hadiah pilihan.",
+  description:
+    "Program member resmi Toko Cat Utama membantu pelanggan mengumpulkan poin dari transaksi dan menukarkannya dengan voucher, merchandise, kebutuhan rumah tangga, elektronik, hingga sepeda motor sesuai tabel poin resmi.",
+  primaryCta: "Join Member",
+  secondaryCta: "Pelajari Selengkapnya",
+  pointRule: "1 poin = Rp. 100.000,- untuk pembelian produk apapun di Toko UTAMA GROUP.",
+  transactionDeadline: "Transaksi untuk mendapatkan poin berlaku sampai 31 Desember 2026.",
+  redemptionDeadline: "Batas penukaran poin sampai 31 Desember 2026.",
+};
+
+export const loyaltyBenefits: TextCard[] = [
+  {
+    title: "Kumpulkan poin dari transaksi",
+    description: "Gunakan nama dan nomor yang sesuai dengan pendaftaran member saat melakukan pembelian.",
+  },
+  {
+    title: "Tukar poin dengan hadiah",
+    description: "Pilihan hadiah mencakup voucher UTAMA, merchandise, perlengkapan rumah tangga, elektronik, dan sepeda motor.",
+  },
+  {
+    title: "Registrasi mudah",
+    description: "Isi formulir keikutsertaan Member UTAMA dengan fotokopi KTP atau tanda pengenal.",
+  },
+];
+
+export const loyaltyRewards: LoyaltyReward[] = [
+  { item: "Voucher UTAMA @25 K", points: 40 },
+  { item: "Kaos UTAMA", points: 90 },
+  { item: "Payung UTAMA", points: 130 },
+  { item: "Magic Com", points: 425 },
+  { item: "Handphone Samsung (Android)", points: 3750 },
+  { item: "Sepeda Motor", points: 11000 },
 ];
 
 export const ctaContent = {

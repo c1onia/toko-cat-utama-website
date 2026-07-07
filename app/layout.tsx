@@ -14,7 +14,15 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="id">
-      <body>{children}</body>
+      <body>
+        <a
+          href="#main-content"
+          className="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-[100] focus:rounded-full focus:bg-utama-yellow focus:px-5 focus:py-3 focus:text-sm focus:font-black focus:text-utama-ink focus:shadow-card"
+        >
+          Lewati ke konten utama
+        </a>
+        {children}
+      </body>
     </html>
   );
 }

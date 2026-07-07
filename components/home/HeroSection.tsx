@@ -10,7 +10,7 @@ export function HeroSection() {
     <section className="relative isolate flex min-h-[86svh] items-end overflow-hidden pt-24 text-utama-ink">
       <Image
         src={brandAssets.heroHouse}
-        alt="Rumah modern dicat warna utama biru, merah, dan kuning"
+        alt="Rumah modern Indonesia dua lantai dengan aksen biru, merah, dan kuning Toko Cat Utama"
         fill
         priority
         className="-z-20 object-cover object-center"

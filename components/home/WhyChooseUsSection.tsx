@@ -1,17 +1,17 @@
-import { BadgeCheck, Layers, Palette, Truck } from "lucide-react";
+import { CalendarCheck, Factory, Palette, Star, Store, Truck } from "lucide-react";
 import { Card } from "@/components/common/Card";
 import { Container } from "@/components/common/Container";
 import { SectionHeader } from "@/components/common/SectionHeader";
 import { whyChooseUs, whyChooseUsHeader } from "@/data/home";
 
-const whyIcons = [BadgeCheck, Layers, Palette, Truck];
+const whyIcons = [CalendarCheck, Truck, Star, Store, Palette, Factory];
 
 export function WhyChooseUsSection() {
   return (
     <section className="bg-white py-16 lg:py-24">
       <Container>
         <SectionHeader {...whyChooseUsHeader} align="center" />
-        <div className="mt-10 grid gap-5 md:grid-cols-2 lg:grid-cols-4">
+        <div className="mt-10 grid gap-5 md:grid-cols-2 lg:grid-cols-3">
           {whyChooseUs.map((item, index) => {
             const Icon = whyIcons[index];
 

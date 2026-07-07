@@ -8,16 +8,17 @@ import { brandAssets, whatsappHref } from "@/data/site";
 
 export function Footer() {
   return (
-    <footer className="bg-neutral-950 text-white">
+    <footer className="border-t-4 border-utama-yellow bg-neutral-950 text-white">
       <Container className="py-14 lg:py-20">
         <div className="grid gap-10 lg:grid-cols-[1.2fr_0.8fr_0.8fr]">
           <div>
             <Image
-              src={brandAssets.logo}
-              alt="Toko Cat Utama"
+              src={brandAssets.logoWhite}
+              alt="Toko Cat Utama sejak 1955"
               width={4500}
               height={2333}
-              className="h-16 w-auto bg-white object-contain p-2"
+              className="h-16 w-auto object-contain"
+              sizes="220px"
             />
             <p className="mt-5 max-w-md text-sm leading-7 text-white/70">
               Toko Cat Utama membantu pelanggan rumah, komersial, dan industri menemukan cat yang tepat dengan layanan yang ramah, rapi, dan berpengalaman.

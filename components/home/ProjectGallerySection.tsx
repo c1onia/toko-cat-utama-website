@@ -21,7 +21,7 @@ export function ProjectGallerySection() {
           </Link>
         </div>
         <div className="mt-10 grid gap-5 lg:grid-cols-3">
-          {projectGallery.map((project) => (
+          {projectGallery.slice(0, 3).map((project) => (
             <article key={project.title} className="group overflow-hidden rounded-lg bg-white shadow-card">
               <div className="relative h-72 overflow-hidden">
                 <Image

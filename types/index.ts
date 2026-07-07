@@ -21,6 +21,43 @@ export interface TextCard {
   description: string;
 }
 
+export interface BrandPartner {
+  name: string;
+  logo: string;
+  productImage?: string;
+  segment: string;
+  bestFor: string;
+  recommendation: string;
+}
+
+export interface BrandRecommendationStep {
+  title: string;
+  description: string;
+}
+
+export interface PromoContent {
+  eyebrow: string;
+  title: string;
+  description: string;
+  disclaimer?: string;
+}
+
+export interface LoyaltyReward {
+  item: string;
+  points: number;
+}
+
+export interface LoyaltyProgram {
+  eyebrow: string;
+  title: string;
+  description: string;
+  primaryCta: string;
+  secondaryCta: string;
+  pointRule: string;
+  transactionDeadline: string;
+  redemptionDeadline: string;
+}
+
 export interface ProductCategory {
   title: string;
   description: string;
@@ -30,8 +67,12 @@ export interface ProductCategory {
 export interface ProjectItem {
   title: string;
   category: string;
+  projectType: string;
+  productsUsed: string;
+  colorName: string;
   image: string;
   description: string;
+  reference?: string;
 }
 
 export interface ServiceItem {

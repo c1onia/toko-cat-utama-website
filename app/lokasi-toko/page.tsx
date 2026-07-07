@@ -18,7 +18,7 @@ export default function LokasiTokoPage() {
   const branchCount = branchGroups.reduce((total, group) => total + group.branches.length, 0);
 
   return (
-    <main className="min-h-screen bg-white">
+    <main id="main-content" className="min-h-screen bg-white">
       <Navbar />
       <PageHero
         eyebrow="Lokasi Toko"

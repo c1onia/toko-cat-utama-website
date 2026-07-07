@@ -19,12 +19,13 @@ export function Navbar() {
       <nav className="mx-auto flex max-w-7xl items-center justify-between px-5 py-3 lg:px-8">
         <Link href="/" className="flex items-center gap-3" aria-label="Toko Cat Utama home">
           <Image
-            src={brandAssets.logo}
+            src={brandAssets.logoPrimary}
             alt="Toko Cat Utama"
             width={4500}
             height={2333}
             priority
             className="h-12 w-auto object-contain"
+            sizes="180px"
           />
         </Link>
 

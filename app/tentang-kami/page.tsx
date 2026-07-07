@@ -19,7 +19,7 @@ const valueIcons = [ShieldCheck, HeartHandshake, BadgeCheck];
 
 export default function TentangKamiPage() {
   return (
-    <main className="min-h-screen bg-white">
+    <main id="main-content" className="min-h-screen bg-white">
       <Navbar />
       <PageHero
         eyebrow="Tentang Kami"
@@ -89,7 +89,7 @@ export default function TentangKamiPage() {
 
       <section className="py-16 lg:py-24">
         <Container>
-          <div className="grid gap-5 md:grid-cols-2 lg:grid-cols-4">
+          <div className="grid gap-5 md:grid-cols-2 lg:grid-cols-3">
             {whyChooseUs.map((item) => (
               <div key={item.title} className="rounded-lg border border-neutral-100 p-6 shadow-card">
                 <h3 className="font-heading text-xl font-black text-utama-ink">{item.title}</h3>

@@ -17,7 +17,7 @@ const contactIcons = [MessageCircle, Mail, Clock];
 
 export default function KontakPage() {
   return (
-    <main className="min-h-screen bg-white">
+    <main id="main-content" className="min-h-screen bg-white">
       <Navbar />
       <PageHero
         eyebrow="Kontak"
