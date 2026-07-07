@@ -3,28 +3,23 @@ import type { TextCard, TimelineItem } from "@/types";
 export const timelineItems: TimelineItem[] = [
   {
     year: "1955",
-    title: "Awal Perjalanan",
-    description: "Toko Cat Utama hadir sebagai toko cat keluarga yang mengutamakan kepercayaan.",
+    title: "Dibangun oleh Bapak Widautama",
+    description: "Toko Cat Utama dibangun oleh Bapak Widautama sebagai awal perjalanan layanan cat keluarga.",
   },
   {
-    year: "1980",
-    title: "Jaringan Merek",
-    description: "Pilihan produk diperluas untuk kebutuhan rumah, toko, dan bangunan komersial.",
+    year: "1995",
+    title: "Cabang Setiabudi Didirikan",
+    description: "Cabang ke-2 di Setiabudi didirikan untuk melayani pelanggan di area yang lebih luas.",
   },
   {
-    year: "2000",
-    title: "Dukungan Proyek",
-    description: "Tim mulai melayani rekomendasi teknis dan suplai untuk proyek berskala besar.",
+    year: "2007",
+    title: "Cabang Jend. Sudirman Didirikan",
+    description: "Cabang ke-3 di Jend. Sudirman (Siliwangi) didirikan sebagai bagian dari pertumbuhan jaringan toko.",
   },
   {
-    year: "2025",
-    title: "Layanan Terintegrasi",
-    description: "Konsultasi warna, pengiriman, dan pengadaan cat dibuat lebih cepat dan rapi.",
-  },
-  {
-    year: "Masa Depan",
-    title: "Mewarnai Lebih Luas",
-    description: "Toko Cat Utama terus berinovasi untuk menjadi mitra cat modern di Indonesia.",
+    year: "2026",
+    title: "18 Cabang dan Terus Bertumbuh",
+    description: "Toko Cat Utama memiliki 18 cabang dan terus bertumbuh untuk melayani lebih banyak pelanggan.",
   },
 ];
 
